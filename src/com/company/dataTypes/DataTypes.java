@@ -15,6 +15,7 @@ public class DataTypes {
      * char
      * <p>
      * reprezinta un singur caracter
+     * https://en.wikipedia.org/wiki/List_of_Unicode_characters
      */
     public static void exempleDeChar() {
         char litera = 'b';
@@ -69,8 +70,8 @@ public class DataTypes {
         System.out.println(spatiiInutile.trim());
 
         //putem de asemenea sa inlaturam caracterele care nu ne intereseaza:
-        String diacritice = "a,b,c,d,e";
-        System.out.println(diacritice.replace(",", ""));
+        String punctuatie = "a,b,c,d,e";
+        System.out.println(punctuatie.replace(",", ""));
     }
 
 
@@ -84,12 +85,15 @@ public class DataTypes {
         int a = 10;
         int b = 5;
         int c = 20;
+
+        //putem face operatii matematice cu Integers
         System.out.println((a * b) - c);
 
-
+        //putem de asemenea transforma un int in string
         String ab = "14";
         int xyz = Integer.parseInt(ab);
 
+        //sau sa transformam un string in int
         String cd = String.valueOf(xyz);
 
     }
@@ -129,5 +133,7 @@ public class DataTypes {
      * https://www.w3schools.com/java/java_data_types.asp
      * https://www.w3schools.com/java/java_strings.asp
      * https://www.javatpoint.com/java-data-types
+     *
+     * https://en.wikipedia.org/wiki/List_of_Unicode_characters
      */
 }
